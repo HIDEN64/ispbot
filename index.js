@@ -31,6 +31,7 @@ client.on("messageCreate", (message) => {
 	|| message?.member?.roles?.cache?.some(r => r.name === "Contributor")
 	|| message?.member?.roles?.cache?.some(r => r.name === "Server Testers")
 	|| message?.member?.roles?.cache?.some(r => r.name === "Redialed Dial-Up Operators")
+	|| message?.member?.roles?.cache?.some(r => r.name === "Veteran Redialed Testers")
 	) {
 		if(message?.content === "!reboot --force"){
 			console.log("sending reboot...");
